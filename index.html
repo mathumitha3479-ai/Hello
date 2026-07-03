@@ -2,94 +2,16 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Search Portal</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
-
-body{
-    background:linear-gradient(135deg,#0d47a1,#42a5f5);
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-.container{
-    text-align:center;
-    background:#fff;
-    padding:50px;
-    border-radius:12px;
-    box-shadow:0 8px 20px rgba(0,0,0,0.2);
-    width:500px;
-    max-width:90%;
-}
-
-h1{
-    color:#1565c0;
-    margin-bottom:30px;
-    font-size:40px;
-}
-
-input{
-    width:100%;
-    padding:15px 20px;
-    font-size:18px;
-    border:1px solid #ccc;
-    border-radius:30px;
-    outline:none;
-}
-
-input:focus{
-    border-color:#1565c0;
-    box-shadow:0 0 5px rgba(21,101,192,0.4);
-}
-
-button{
-    margin-top:20px;
-    padding:12px 30px;
-    background:#1565c0;
-    color:white;
-    border:none;
-    border-radius:30px;
-    font-size:16px;
-    cursor:pointer;
-}
-
-button:hover{
-    background:#0d47a1;
-}
-
-.footer{
-    margin-top:20px;
-    font-size:13px;
-    color:#666;
-}
-</style>
+<title>Search Box</title>
 </head>
-
 <body>
 
-<div class="container">
+<h2>Search</h2>
 
-    <h1>Search</h1>
-
-    <form action="https://formspree.io/f/xzdlkwze" method="POST">
-        <input type="text" name="search_query" placeholder="Type here..." required>
-        <button type="submit">Search</button>
-    </form>
-
-    <div class="footer">
-        © 2026 Search Portal
-    </div>
-
-</div>
+<form action="https://formspree.io/f/xzdlkwze" method="POST">
+    <input type="text" name="search_query" placeholder="Type something..." required>
+    <button type="submit">Search</button>
+</form>
 
 </body>
 </html>
