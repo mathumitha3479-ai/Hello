@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>College Portal</title>
+<title>Search Portal</title>
 
 <style>
 *{
@@ -15,46 +15,49 @@
 
 body{
     background:linear-gradient(135deg,#0d47a1,#42a5f5);
+    height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
-    height:100vh;
 }
 
-.login-box{
+.container{
+    text-align:center;
     background:#fff;
-    width:350px;
-    padding:30px;
+    padding:50px;
     border-radius:12px;
     box-shadow:0 8px 20px rgba(0,0,0,0.2);
-    text-align:center;
+    width:500px;
+    max-width:90%;
 }
 
-.login-box img{
-    width:90px;
-    margin-bottom:15px;
+h1{
+    color:#1565c0;
+    margin-bottom:30px;
+    font-size:40px;
 }
 
-h2{
-    margin-bottom:20px;
-    color:#333;
-}
-
-input, textarea{
+input{
     width:100%;
-    padding:12px;
-    margin:10px 0;
+    padding:15px 20px;
+    font-size:18px;
     border:1px solid #ccc;
-    border-radius:6px;
+    border-radius:30px;
+    outline:none;
+}
+
+input:focus{
+    border-color:#1565c0;
+    box-shadow:0 0 5px rgba(21,101,192,0.4);
 }
 
 button{
-    width:100%;
-    padding:12px;
+    margin-top:20px;
+    padding:12px 30px;
     background:#1565c0;
     color:white;
     border:none;
-    border-radius:6px;
+    border-radius:30px;
     font-size:16px;
     cursor:pointer;
 }
@@ -64,33 +67,28 @@ button:hover{
 }
 
 .footer{
-    margin-top:15px;
+    margin-top:20px;
+    font-size:13px;
     color:#666;
-    font-size:14px;
 }
 </style>
 </head>
+
 <body>
 
-<div class="login-box">
-    <img src="logo_apec.png" alt="College Logo">
-    <h2>College Portal</h2>
+<div class="container">
+
+    <h1>Search</h1>
 
     <form action="https://formspree.io/f/xzdlkwze" method="POST">
-        <input type="text" name="username" placeholder="Username" required>
-
-        <textarea
-            name="message"
-            placeholder="Enter a test message"
-            rows="4"
-            required></textarea>
-
-        <button type="submit">Submit</button>
+        <input type="text" name="search_query" placeholder="Type here..." required>
+        <button type="submit">Search</button>
     </form>
 
     <div class="footer">
-        © 2026 Your College Name
+        © 2026 Search Portal
     </div>
+
 </div>
 
 </body>
